@@ -1,0 +1,377 @@
+body,
+html {
+  font-family: "Suez One", serif;
+  /* font-family: 'Roboto Slab', serif; */
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: rgb(227, 227, 227);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all.6s ease;
+  -ms-transition: all.6s ease;
+  -o-transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  -webkit-transition: all.6s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 - експлоер 8го поколения*/
+  transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  -webkit-transition: all 3s ease-out;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* стили для шапки сайта */
+header {
+  float: left;
+  background-color: #0a094f;
+  width: 99.4%;
+  padding: 0.3%;
+  border-bottom: 5px solid hsl(0, 92%, 31%);
+  font-family: "Roboto Slab", serif;
+}
+
+header > div#logo > a > img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+header > div#logo > a {
+  color: rgb(255, 255, 255);
+}
+
+header > div#logo > a > span {
+  font-size: 2.5em;
+  margin-left: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+header > div#logo > a > img {
+  margin-left: 15%;
+}
+
+/* адаптивность */
+@media (min-width: 950px) {
+  header > div#logo > a > img {
+    margin-left: 15%;
+  }
+
+  #logo {
+    float: left;
+    width: 30%;
+  }
+
+  #about {
+    float: left;
+    width: 37%;
+  }
+
+  #reg_auth {
+    float: right;
+    width: 30%;
+  }
+}
+
+@media (max-width: 949px) and (min-width: 525px) {
+  header > div#logo > a > img {
+    margin-left: 15%;
+  }
+
+  #logo {
+    float: left;
+    width: 50%;
+  }
+
+  #about {
+    visibility: hidden;
+    display: none;
+  }
+
+  #reg_auth {
+    float: right;
+    width: 50%;
+  }
+}
+
+@media (max-width: 524px) {
+  header > div#logo > a > img {
+    margin-left: 5%;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  #about {
+    visibility: hidden;
+    display: none;
+  }
+
+  #reg_auth {
+    visibility: hidden;
+    display: none;
+  }
+}
+/* конец адаптивности */
+
+#about {
+  text-align: center;
+  font-size: 1.4em;
+  padding: 10px;
+}
+
+#about > a {
+  color: #fff;
+}
+
+#about > a:hover {
+  color: #568ded;
+  border-bottom: 1px solid silver;
+}
+
+#about > a:last-child {
+  margin-left: 10%;
+}
+
+#reg_auth > a {
+  color: #fff;
+}
+
+#btn {
+  float: right;
+  margin-right: 3%;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 5px 9px 5px 9px;
+  font-size: 1.2em;
+  background-color: hsl(0, 92%, 31%);
+  text-shadow: #3d5fe8 0 0 2px;
+  border-bottom: 4px solid #568ded;
+}
+
+#reg_auth > a:hover > div#btn {
+  border-bottom: 2px solid #568ded;
+  margin-top: 7px;
+}
+
+#reg_auth > a:active > div#btn {
+  border-bottom: 0;
+  margin-top: 9px;
+}
+
+/* конец стилей для шапки сайта */
+
+/* меню сайта*/
+nav {
+background-color: #fff;
+width: 99.4%;
+padding: 0.3%;
+float: left;
+border-bottom: 2px solid silver;
+}
+
+nav>a {
+  color: #0a094f;
+  font-size: 1.5em;
+  margin-left: 5%;
+}
+
+nav>a:hover {
+  color: #568ded;
+  border-bottom: 1px solid slategray;
+}
+
+#search {
+  float: right;
+  color: #0a094f;
+  cursor: pointer;
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+/* конец меню сайта */
+
+/* основная часть сайта */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+/* конец основной части сайта */
+
+/* футер сайта */
+footer {
+  float: left;
+  background-color: #0a094f;
+  width: 98%;
+  padding: 1%;
+  border-top: 5px solid hsl(0, 92%, 31%);
+  font-family: "Roboto Slab", serif;
+}
+
+#site_name {
+  margin-right: 5%;
+  color: #ffffff;
+  font-size: 1.5em;
+  float: right;
+}
+
+#site_name > span {
+  font-family: "Suez One", serif;
+}
+
+@media (max-width: 1080px) {
+  #clear {
+    clear: both;
+  }
+
+  #social {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  #site_name{
+    display: none;
+  }
+}
+
+#footer_menu {
+  font-size: 1.2em;
+}
+
+#footer_menu > a {
+  margin-left: 2%;
+  color: rgb(255, 255, 255);
+}
+
+#footer_menu > a:hover,
+#rights > a:hover {
+  border-bottom: 1px solid silver;
+  color: #568ded;
+}
+
+#rights {
+  float: left;
+  margin-left: 5%;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+#rights > a {
+  color: #fff;
+}
+
+#social {
+  float: right;
+  width: 70%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+#social > a {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #000000;
+  margin-left: 2%;
+  width: 30px;
+  height: 30px;
+  float: right;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+
+#social > a:hover {
+  background-color: #fff;
+}
+/* конец футера сайта */
+
+.info-block {
+    background-color: #fff;
+    max-width: 500em;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 5000px;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-content {
+    font-size: 18px;
+    color: #555;
+}
+
+.images {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.images img {
+    width: 48%;
+    max-height: 500px;
+    object-fit: cover;
+    border: 1px solid #ffffff;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.caption {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+

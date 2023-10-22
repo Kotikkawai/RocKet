@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RocKet.com</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="foto/rocket_icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Suez+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&family=Suez+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/17a26e4f73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="content">
+        <header>
+          <div id="logo">
+            <a
+              href="index.html"
+              title="To home"
+              ><img
+                src="foto/rocket_icon.png"
+                title="RocKet.com"
+                alt="RocKet.com"
+              />
+              <span>RocKet.com</span>
+            </a>
+          </div>
+
+          <div id="about">
+            <a href="" title="Find out more about advertising">Advertising</a>
+            <a href="" title="Write us a letter">Feedback</a>
+          </div>
+
+          <div id="reg_auth">
+            <a href="" title="Login to the user account">
+              <div id="btn">Log in</div>
+            </a>
+            <a href="nq.html" title="Register on the site">
+              <div id="btn">Registration</div>
+            </a>
+          </div>
+        </header>
+        <nav>
+          <a href="javascript:void(0)" onclick="showPage('page1')"
+            >The internet</a
+          >
+          <a href="javascript:void(0)" onclick="showPage('page2')">History </a>
+          <a href="javascript:void(0)" onclick="showPage('page3')"
+            >IP address</a
+          >
+          <a href="javascript:void(0)" onclick="showPage('page4')"
+            >Internet operation</a
+          >
+          <a href="javascript:void(0)" onclick="showPage('page5')"
+            >Web browser</a
+          >
+          <div id="search">
+            <span>Search</span>
+            <i
+              class="fa-solid fa-magnifying-glass fa-spin"
+              style="color: #466191"
+            ></i>
+          </div>
+        </nav>
+      </div>
+
+      <section id="page1">
+        <div class="info-block">
+          <h1>The internet</h1>
+          <div class="info-content">
+            <h2>What is the internet?</h2>
+            <p>
+              The internet is the world’s most popular computer network. It
+              began as an academic research project in 1969, and became a global
+              commercial network in the 1990s. Today it is used by more than 2
+              billion people around the world.
+            </p>
+            <p>
+              The internet is notable for its decentralization. No one owns the
+              internet or controls who can connect to it. Instead, thousands of
+              different organizations operate their own networks and negotiate
+              voluntary interconnection agreements.
+            </p>
+            <p>
+              Most people access internet content using a web browser. Indeed,
+              the web has become so popular that many people incorrectly treat
+              the internet and the web as synonymous. But in reality, the web is
+              just one of many internet applications. Other popular Internet
+              applications include email and BitTorrent.
+            </p>
+            <h2>Where is the internet?</h2>
+            <p>The internet has three basic parts:</p>
+            <ul>
+              <li>
+                <p>
+                  The last mile is the part of the internet that connects homes
+                  and small businesses to the internet. Currently, about 60
+                  percent of residential internet connections in the United
+                  States are provided by cable TV companies such as Comcast and
+                  Time Warner. Of the remaining 40 percent, a growing fraction
+                  use new fiber optic cables, most of which are part of
+                  Verizon’s FiOS program or AT&T’s U-Verse. Finally, a
+                  significant but shrinking number use outdated DSL service
+                  provided over telephone cables.
+                </p>
+                <p>
+                  The last mile also includes the towers that allow people to
+                  access the internet with their cell phones. Wireless internet
+                  service accounts for a large and growing share of all internet
+                  usage.
+                </p>
+              </li>
+              <li>
+                Data centers are rooms full of servers that store user data and
+                host online apps and content. Some are owned by large companies
+                such as Google and Facebook. Others are commercial facilities
+                that provide service to many smaller websites. Data centers have
+                very fast internet connections, allowing them to serve many
+                users simultaneously. Data centers can be located anywhere in
+                the world, but they are often located in remote areas where land
+                and electricity are cheap. For example, Google, Facebook, and
+                Microsoft have all constructed vast data centers in Iowa.
+              </li>
+              <li>
+                The backbone consists of long-distance networks — mostly on
+                fiber optic cables — that carry data between data centers and
+                consumers. The backbone market is highly competitive. Backbone
+                providers frequently connect their networks together at internet
+                exchange points, usually located in major cities. Establishing a
+                presence at IEPs makes it much easier for backbone providers to
+                improve their connections to others.
+              </li>
+            </ul>
+            <div class="container">
+              <span class="image-container">
+                <img
+                  src="http://cdn1.vox-cdn.com/assets/4195719/1024px-AMS-IX_optical_patch_panel_medium.jpg"
+                  alt="Cables at an Internet Exchange Point. (Fabienne Serriere)"
+                />
+                <span class="caption"
+                  >Cables at an Internet Exchange Point. (Fabienne
+                  Serriere)</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="page2">
+        <div class="info-block">
+          <h1>History of the internet</h1>
+          <div class="info-content">
+            <h2>Who created the internet?</h2>
+            <div class="container">
+              <span class="image-container">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Vinton Cerf and Robert Kahn"
+                />
+                <span class="caption">Vinton Cerf and Robert Kahn</span>
+              </span>
+            </div>
+            <p>
+              The internet began as ARPANET, an academic research network that
+              was funded by the military’s Advanced Research Projects Agency
+              (ARPA, now DARPA). The project was led by Bob Taylor, an ARPA
+              administrator, and the network was built by the consulting firm of
+              Bolt, Beranek and Newman. It began operations in 1969.
+            </p>
+            <p>
+              In 1973, software engineers Vint Cerf and Bob Kahn began work on
+              the next generation of networking standards for the ARPANET. These
+              standards, known as TCP/IP, became the foundation of the modern
+              internet. ARPANET switched to using TCP/IP on January 1, 1983.
+            </p>
+            <p>
+              During the 1980s, funding for the internet shifted from the
+              military to the National Science Foundation. The NSF funded the
+              long-distance networks that served as the internet’s backbone from
+              1981 until 1994. In 1994, the Clinton Administration turned
+              control over the internet backbone to the private sector. It has
+              been privately operated and funded ever since.
+            </p>
+            <h2>Did Al Gore invent the internet?</h2>
+            <div class="container">
+              <span class="image-container">
+                <img
+                  src="https://www.peoples.ru/state/politics/albert_gore/gore_200911161406010.jpg"
+                  alt="Al Gore"
+                />
+                <span class="caption">Al Gore </span>
+              </span>
+            </div>
+            <p>
+              Former Vice President Al Gore is frequently quoted as claiming
+              credit for the invention of the internet, but what he actually
+              said in a 1999 CNN interview was “I took the initiative in
+              creating the internet.” Gore was widely mocked for this statement.
+              But the men who did invent the internet, TCP/IP designers Bob Kahn
+              and Vint Cerf, wrote in Gore’s defense in 2000. They argue that
+              Gore was “the first political leader to recognize the importance
+              of the internet and to promote and support its development.”
+            </p>
+            <p>
+              “As far back as the 1970s Congressman Gore promoted the idea of
+              high speedtelecommunications,” the pair wrote. “As a Senator in
+              the 1980s Gore urged government agencies to consolidate what at
+              the time were several dozen different and unconnected networks
+              into an ‘Interagency Network.’” Gore sponsored the 1991 High
+              Performance Computing and Communications Act, which Kahn and Cerf
+              say “became one of the major vehicles for the spread of the
+              internet beyond the field of computer science.“
+            </p>
+            <h2>Who runs the internet?</h2>
+            <div class="container">
+              <span class="image-container">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapkEYcBKru6ZzvQW19TG7jykwghKfZCn3dA&usqp=CAU"
+                  alt="Runer of the internet"
+                />
+                <span class="caption">Runer of the internet</span>
+              </span>
+            </div>
+            <p>
+              No one runs the internet. It’s organized as a decentralized
+              network of networks. Thousands of companies, universities,
+              governments, and other entities operate their own networks and
+              exchange traffic with each other based on voluntary
+              interconnection agreements.
+            </p>
+            <p>
+              The shared technical standards that make the internet work are
+              managed by an organization called the Internet Engineering Task
+              Force. The IETF is an open organization; anyone is free to attend
+              meetings, propose new standards, and recommend changes to existing
+              standards. No one is required to adopt standards endorsed by the
+              IETF, but the IETF’s consensus-based decision-making process helps
+              to ensure that its recommendations are generally adopted by the
+              internet community.
+            </p>
+            <p>
+              The Internet Corporation for Assigned Names and Numbers (ICANN) is
+              sometimes described as being responsible for internet governance.
+              As its name implies, ICANN is in charge of distributing domain
+              names (like vox.com) and IP addresses. But ICANN doesn’t control
+              who can connect to the internet or what kind of information can be
+              sent over it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="page3">
+        <div class="info-block">
+          <h1>IP address</h1>
+          <div class="info-content">
+            <h2>What’s an IP address?</h2>
+            <p>
+              Internet Protocol addresses are numbers that computers use to
+              identify each other on the internet. For example, an IP address
+              for vox.com is 216.146.46.10.
+            </p>
+            <p>
+              An ICANN department known as the Internet Assigned Numbers
+              Authority is responsible for distributing IP addresses to ensure
+              that two different organizations don’t use the same address.
+            </p>
+
+            <h2>What is IPv6?</h2>
+            <p>
+              TThe current internet standard, known as IPv4, only allows for
+              about 4 billion IP addresses. This was considered a very big
+              number in the 1970s, but today, the supply of IPv4 addresses is
+              nearly exhausted.
+            </p>
+            <p>
+              So internet engineers have developed a new standard called IPv6.
+              IPv6 allows for a mind-boggling number of unique addresses — the
+              exact figure is 39 digits long — ensuring that the world will
+              never again run out.
+            </p>
+            <p>
+              At first, the transition to IPv6 was slow. Technical work on the
+              standard was completed in the 1990s, but the internet community
+              faced a serious chicken-and-egg problem: as long as most people
+              were using IPv4, there was little incentive for anyone to switch
+              to IPv6.
+            </p>
+            <p>
+              But as IPv4 addresses became scarce, IPv6 adoption accelerated.
+              The fraction of users who connected to Google via IPv6 grew from 1
+              percent at the beginning of 2013 to 6 percent in mid-2015.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="page4">
+        <div class="info-block">
+          <h1>Internet operation</h1>
+          <div class="info-content">
+            <h2>How does wireless internet work?</h2>
+            <p>
+              In its early years, internet access was carried over physical
+              cables. But more recently, wireless internet access has become
+              increasingly common.
+            </p>
+            <p>
+              There are two basic types of wireless internet access: wifi and
+              cellular. Wifi networks are relatively simple. Anyone can purchase
+              wifi networking equipment in order to provide internet access in a
+              home or business. Wifi networks use unlicensed spectrum:
+              electromagnetic frequencies that are available for anyone to use
+              without charge. To prevent neighbors’ networks from interfering
+              with each other, there are strict limits on the power (and
+              therefore the range) of wifi networks.
+            </p>
+            <p>
+              Cellular networks are more centralized. They work by breaking up
+              the service territory into cells. In the densest areas, cells can
+              be as small as a single city block; in rural areas a cell can be
+              miles across. Each cell has a tower at its center providing
+              services to devices there. When a device moves from one cell to
+              another, the network automatically hands off the device from one
+              tower to another, allowing the user to continue communicating
+              without interruption.
+            </p>
+            <p>
+              Cells are too large to use the unlicensed, low-power spectrum used
+              by wifi networks. Instead, cellular networks use spectrum licensed
+              for their exclusive use. Because this spectrum is scarce, it is
+              usually awarded by auction. Wireless auctions have generated tens
+              of billions of dollars in revenue for the US treasury since the
+              first one was held in 1994.
+            </p>
+            <h2>What is the cloud?</h2>
+            <p>
+              The cloud describes an approach to computing that has become
+              popular in the early 2000s. By storing files on servers and
+              delivering software over the internet, cloud computing provides
+              users with a simpler, more reliable computing experience. Cloud
+              computing allows consumers and businesses to treat computing as a
+              utility, leaving the technical details to technology companies.
+            </p>
+            <p>
+              For example, in the 1990s, many people used Microsoft Office to
+              edit documents and spreadsheets. They stored documents on their
+              hard drives. And when a new version of Microsoft Office was
+              released, customers had to purchase it and manually install it on
+              their PCs.
+            </p>
+            <p>
+              In contrast, Google Docs is a cloud office suite. When a user
+              visits docs.google.com, she automatically gets the latest version
+              of Google Docs. Because her files are stored on Google’s servers,
+              they’re available from any computer. Even better, she doesn’t have
+              to worry about losing her files in a hard drive crash. (Microsoft
+              now has its own cloud office suite called Office 365.)
+            </p>
+            <p>
+              There are many other examples. Gmail and Hotmail are cloud email
+              services that have largely replaced desktop email clients such as
+              Outlook. Dropbox is a cloud computing service that automatically
+              synchronizes data between devices, saving people from having to
+              carry files around on floppy disks. Apple’s iCloud automatically
+              copies users’ music and other files from their desktop computer to
+              their mobile devices, saving users the hassle of synchronizing via
+              a USB connection.
+            </p>
+            <p>
+              Cloud computing is having a big impact for businesses too. In the
+              1990s, companies wanting to create a website needed to purchase
+              and operate their own servers. But in 2006, Amazon.com launched
+              Amazon Web Services, which allows customers to rent servers by the
+              hour. That has lowered the barrier to entry for creating websites
+              and made it much easier for sites to quickly expand capacity as
+              they grow more popular.
+            </p>
+            <h2>What is a packet?</h2>
+            <p>
+              A packet is the basic unit of information transmitted over the
+              internet. Splitting information up into small, digestible pieces
+              allows the network’s capacity to be used more efficiently.
+            </p>
+            <p>
+              A packet has two parts. The header contains information that helps
+              the packet get to its destination, including the length of the
+              packet, its source and destination, and a checksum value that
+              helps the recipient detect if a packet was damaged in transit.
+              After the header comes the actual data. A packet can contain up to
+              64 kilobytes of data, which is roughly 20 pages of plain text.
+            </p>
+            <p>
+              If internet routers experience congestion or other technical
+              problems, they are allowed to deal with it by simply discarding
+              packets. It’s the sending computer’s responsibility to detect that
+              a packet didn’t reach its destination and send another copy. This
+              approach might seem counterintuitive, but it simplifies the
+              internet’s core infrastructure, leading to higher performance at
+              lower cost.
+            </p>
+            <h2>What is the World Wide Web?</h2>
+            <p>
+              The World Wide Web is a popular way to publish information on the
+              internet. The web was created by Timothy Berners-Lee, a computer
+              programmer at the European scientific research organization CERN,
+              in 1991. It offered a more powerful and user-friendly interface
+              than other internet applications. The web supported hyperlinks,
+              allowing users to browse from one document to another with a
+              single click.
+            </p>
+            <p>
+              Over time, the web became increasingly sophisticated, supporting
+              images, audio, video, and interactive content. In the mid-1990s,
+              companies such as Yahoo and Amazon.com began building profitable
+              businesses based on the web. In the 2000s, full-featured web-based
+              applications such as Yahoo Maps and Google Docs were created.
+            </p>
+            <p>
+              In 1994, Berners-Lee created the World Wide Web Consortium (W3C)
+              to be the web’s official standards organization. He is still the
+              W3C’s director and continues to oversee the development of web
+              standards. However, the web is an open platform, and the W3C can’t
+              compel anyone to adopt its recommendations. In practice, the
+              organizations with the most influence over the web are Microsoft,
+              Google, Apple, and Mozilla, the companies that produce the leading
+              web browsers. Any technologies adopted by these four become de
+              facto web standards.
+            </p>
+            <p>
+              The web has become so popular that many people now regard it as
+              synonymous with the internet itself. But technically, the web is
+              just one of many internet applications. Other applications include
+              email and BitTorrent.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="page5">
+        <div class="info-block">
+          <h1>Web browser</h1>
+          <div class="info-content">
+            <h2>What’s a web browser?</h2>
+            <p>
+              A web browser is a computer program that allows users to download
+              and view websites. Web browsers are available for desktop
+              computers, tablets, and mobile phones.
+            </p>
+            <p>
+              The first widely used browser was Mosaic, created by researchers
+              at the University of Illinois. The Mosaic team moved to California
+              to found Netscape, which built the first commercially successful
+              web browser in 1994.
+            </p>
+            <p>
+              Netscape’s popularity was soon eclipsed by Microsoft’s Internet
+              Explorer, but an open source version of Netscape’s browser became
+              the modern Firefox browser. Apple released its Safari browser in
+              2003, and Google released a browser called Chrome in 2008. By
+              2015, Chrome had grown to be the most popular web browser with a
+              market share around 50 percent. Internet Explorer, Firefox, and
+              Safari also had significant market share.
+            </p>
+            <h2>What is SSL?</h2>
+            <p>
+              SSL, short for Secure Sockets Layer, is a family of encryption
+              technologies that allows web users to protect the privacy of
+              information they transmit over the internet.
+            </p>
+            <p>
+              When you visit a secure website such as Gmail.com, you'll see a
+              lock next to the URL, indicating that your communications with the
+              site are encrypted. Here's what that looks like in Google's Chrome
+              browser:
+            </p>
+            <div class="container">
+              <span class="image-container">
+                <img
+                  src="http://cdn3.vox-cdn.com/assets/4269173/Screen_Shot_2014-04-08_at_10.55.39_AM.png"
+                  alt="SSL"
+                />
+                <span class="caption">SSL</span>
+              </span>
+            </div>
+            <p>
+              That lock is supposed to signal that third parties won't be able
+              to read any information you send or receive. Under the hood, SSL
+              accomplishes that by transforming your data into a coded message
+              that only the recipient knows how to decipher. If a malicious
+              party is listening to the conversation, it will only see a
+              seemingly random string of characters, not the contents of your
+              emails, Facebook posts, credit card numbers, or other private
+              information.
+            </p>
+            <p>
+              SSL was introduced by Netscape in 1994. In its early years, it was
+              only used on a few types of websites, such as online banking
+              sites. By the early 2010s, Google, Yahoo, and Facebook all used
+              SSL encryption for their websites and online services. More
+              recently, there has been a movement toward making the use of SSL
+              universal. In 2015, Mozilla announced that future versions of the
+              Firefox browser would treat the lack of SSL encryption as a
+              security flaw, as a way to encourage all websites to upgrade.
+              Google is considering taking the same step with Chrome.
+            </p>
+            <h2>What is the Domain Name System?</h2>
+            <p>
+              The Domain Name System (DNS) is the reason you can access Vox by
+              typing vox.com into your browser rather than a hard-to-remember
+              numeric address such as 216.146.46.10.
+            </p>
+            <p>
+              The system is hierarchical. For example, the .com domain is
+              administered by a company called Verisign. Verisign assigns
+              sub-domains like google.com and vox.com. Owners of these
+              second-level domains, in turn, can create sub-domains such as
+              mail.google.com and maps.google.com.
+            </p>
+            <p>
+              Because popular websites use domain names to identify themselves
+              to the public, the security of DNS has become an increasing
+              concern. Criminals and government spies alike have sought to
+              compromise DNS in order to impersonate popular websites such as
+              facebook.com and gmail.com and intercept their private
+              communications. A standard called DNSSEC seeks to beef up DNS
+              security with encryption, but few people have adopted it.
+            </p>
+            <h2>Who decides what domain names exist and who gets them?</h2>
+            <p>
+              The domain name system is administered by the Internet Corporation
+              for Assigned Names and Numbers (ICANN), a non-profit organization
+              based in California. ICANN was founded in 1998. It was granted
+              authority over DNS by the US Commerce Department, though it has
+              increasingly asserted its independence from the US government.
+            </p>
+            <p>
+              There are two types of domain names. The first is generic
+              top-level domains (gTLDs) such as .com, .edu, .org, and .gov.
+              Because the internet originated in the United States, these
+              domains tend to be most popular there. Authority over these
+              domains is usually delegated to private organizations.
+            </p>
+            <p>
+              There are also country-code top-level domains (ccTLDs). Each
+              country in the world has its own 2-letter code. For example, the
+              ccTLD for the United States is .us, Great Britain’s is .uk, and
+              China’s is .cn. These domains are administered by authorities in
+              each country. Some ccTLDs, such as .tv (for the island nation of
+              Tuvalu) and .io (the British Indian Ocean Territory), have become
+              popular for use outside of their home countries.
+            </p>
+            <p>
+              In 2011, ICANN voted to make it easier to create new gTLDs. As a
+              result, there may be dozens or even hundreds of new domains in the
+              next few years.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div id="site_name"><span>RocKet</span> - community</div>
+        <div id="clear"></div>
+        <div id="footer_menu">
+          <a href="" title="Find out more about advertising">Advertising </a>
+          <a href="" title="Support the project">Support the project</a>
+          <a href="" title="Write a letter">Feedback</a>
+        </div>
+        <div id="rights">
+          <a href=""
+            >All rights reserved &copy;
+            <?=date ('Y')?>
+          </a>
+        </div>
+        <div id="social">
+          <a href="" title="Our Instagram"
+            ><i
+              class="fa-brands fa-instagram fa-bounce"
+              style="color: #fa0000"
+            ></i
+          ></a>
+          <a href="" title="FaceBook group"
+            ><i
+              class="fa-brands fa-square-facebook fa-bounce"
+              style="color: #0a60f5"
+            ></i
+          ></a>
+          <a href="" title="We are in Twitter"
+            ><i
+              class="fa-brands fa-square-twitter fa-bounce"
+              style="color: #0a60f5"
+            ></i
+          ></a>
+          <a href="" title="Main channel on YouTube"
+            ><i
+              class="fa-brands fa-youtube fa-bounce"
+              style="color: #fa0000"
+            ></i
+          ></a>
+          <a href="" title="Google+"
+            ><i
+              class="fa-brands fa-google-plus-g fa-bounce"
+              style="color: #0a60f5"
+            ></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

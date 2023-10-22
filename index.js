@@ -42,16 +42,16 @@ function showError(elementId, message) {
 }
 // the and of registratoin
 
-// start pereshodi 
-document.addEventListener("DOMContentLoaded", function() {
+// start pereshodi
+document.addEventListener("DOMContentLoaded", function () {
   // Сховати всі розділи при завантаженні сторінки
   hideAllSections();
 });
 
 function hideAllSections() {
-  const sections = document.querySelectorAll('section');
-  sections.forEach(section => {
-      section.style.display = 'none';
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section) => {
+    section.style.display = "none";
   });
 }
 
@@ -59,7 +59,7 @@ function showPage(pageId) {
   hideAllSections();
   const selectedSection = document.getElementById(pageId);
   if (selectedSection) {
-      selectedSection.style.display = 'block';
+    selectedSection.style.display = "block";
   }
 }
-// the and of pereshodi 
+// the and of pereshodi

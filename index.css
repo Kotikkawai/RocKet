@@ -48,10 +48,10 @@ hr {
 /* стили для шапки сайта */
 header {
   float: left;
-  background-color: #0a094f;
-  width: 99.4%;
+  background: linear-gradient(90deg, rgb(2, 2, 151), rgb(143, 1, 1));
+  width: 100%;
   padding: 0.3%;
-  border-bottom: 5px solid hsl(0, 92%, 31%);
+  border-bottom: 5px solid #8d2d66;
   font-family: "Roboto Slab", serif;
 }
 
@@ -169,7 +169,7 @@ header > div#logo > a > img {
   border-radius: 5px;
   padding: 5px 9px 5px 9px;
   font-size: 1.2em;
-  background-color: hsl(0, 92%, 31%);
+  background-color: #661045;
   text-shadow: #3d5fe8 0 0 2px;
   border-bottom: 4px solid #568ded;
 }
@@ -188,20 +188,20 @@ header > div#logo > a > img {
 
 /* меню сайта*/
 nav {
-background-color: #fff;
-width: 99.4%;
-padding: 0.3%;
-float: left;
-border-bottom: 2px solid silver;
+  background-color: #fff;
+  width: 100%;
+  padding: 0.3%;
+  float: left;
+  border-bottom: 2px solid silver;
 }
 
-nav>a {
+nav > a {
   color: #0a094f;
   font-size: 1.5em;
   margin-left: 5%;
 }
 
-nav>a:hover {
+nav > a:hover {
   color: #568ded;
   border-bottom: 1px solid slategray;
 }
@@ -230,10 +230,10 @@ nav>a:hover {
 /* футер сайта */
 footer {
   float: left;
-  background-color: #0a094f;
-  width: 98%;
+  background: linear-gradient(90deg, rgb(2, 2, 151), rgb(143, 1, 1));
+  width: 100%;
   padding: 1%;
-  border-top: 5px solid hsl(0, 92%, 31%);
+  border-top: 5px solid #8d2d66;
   font-family: "Roboto Slab", serif;
 }
 
@@ -259,7 +259,7 @@ footer {
 }
 
 @media (max-width: 520px) {
-  #site_name{
+  #site_name {
     display: none;
   }
 }
@@ -317,61 +317,162 @@ footer {
 /* конец футера сайта */
 
 .info-block {
-    background-color: #fff;
-    max-width: 500em;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 100%;
-    font-family: 'Roboto Slab', serif;
+  background-color: #fff;
+  max-width: 500em;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  font-family: "Roboto Slab", serif;
 }
 
 h1 {
-    font-size: 28px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .info-content {
-    font-size: 18px;
-    color: #555;
+  font-size: 18px;
+  color: #555;
 }
 
 .images {
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .images img {
-    width: 48%;
-    max-height: 500px;
-    object-fit: cover;
-    border: 1px solid #ffffff;
+  width: 48%;
+  max-height: 500px;
+  object-fit: cover;
+  border: 1px solid #ffffff;
 }
 
-
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .image-container {
-    display: inline-block;
+  display: inline-block;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .caption {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
+/* video */
+* {
+  box-sizing: border-box;
+}
+.indexx {
+  margin: 0;
+}
+.first {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.firstvideo {
+  position: absolute;
+  left: o;
+  top: o;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.firsttitle {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(20px, 10vh, 100px);
+}
+
+/* buttom */
+.btn-55,
+.btn-55 *,
+.btn-55 :after,
+.btn-55 :before,
+.btn-55:after,
+.btn-55:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-55 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-55:disabled {
+  cursor: default;
+}
+.btn-55:-moz-focusring {
+  outline: auto;
+}
+.btn-55 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-55 [hidden] {
+  display: none;
+}
+.btn-55 {
+  background: linear-gradient(90deg, blue, red);
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.8rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-55 span {
+  background: #1e293b;
+  border-radius: 999px;
+  color: #fff;
+  display: grid;
+  inset: 5px;
+  place-items: center;
+  position: absolute;
+  transition: background 0.3s;
+}
+.btn-55:hover span {
+  background: none;
+}
+.btn-55 {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  text-align: center;
+}

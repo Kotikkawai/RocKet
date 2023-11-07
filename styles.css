@@ -5,10 +5,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to right, blue, red);
+  background-color:  rgb(2, 2, 151);
 }
 
 .text {
   font-size: 3rem;
   font-weight: bold;
+  background-color: rgb(30, 27, 207);
+  color: #ffffff;
 }

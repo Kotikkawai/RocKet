@@ -63,3 +63,44 @@ function showPage(pageId) {
   }
 }
 // the and of pereshodi
+
+
+
+//Support the project
+
+document.getElementById("donateButton").addEventListener("click", function() {
+  const amount = document.getElementById("donationAmount").value;
+  if (amount) {
+      // Replace with your PayPal donation link
+      window.location.href = `https://www.paypal.com/donate?amount=${amount}`;
+  } else {
+      alert("Please enter the amount to donate.");
+  }
+});
+
+
+
+//Feed back 
+document.addEventListener('DOMContentLoaded', function () {
+  const feedbackForm = document.getElementById('feedbackForm');
+  const feedbackList = document.getElementById('feedbackList');
+
+  feedbackForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const comment = document.getElementById('comment').value;
+
+      if (name && comment) {
+          const listItem = document.createElement('li');
+          listItem.innerHTML = `<strong>${name}:</strong> ${comment}`;
+          feedbackList.appendChild(listItem);
+
+          // Clear the form
+          document.getElementById('name').value = '';
+          document.getElementById('comment').value = '';
+      } else {
+          alert('Please fill out both name and comment fields.');
+      }
+  });
+});
